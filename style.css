@@ -23,3 +23,17 @@ body{
     animation: custom-spin infinite 15s ease-in-out alternate;
     animation-delay: 4s;
 }
+@keyframes jump {
+  0%, 100% {
+      transform: scale(100%);
+  }
+  10% {
+      transform: scale(80%);
+  }
+  50% {
+      transform: scale(120%);
+  }
+}
+.hover\:animate-jump:hover {
+  animation: jump .5s both;
+}
