@@ -5,20 +5,16 @@
 
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
- <link rel="stylesheet" href="style.css">
- <script src="https://cdn.tailwindcss.com"></script>
- <link rel="script" href="script.js">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Sintony&display=swap" rel="stylesheet">
-
-
-
-
- <title>Nexuz: Product Experience Agency</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="script.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sintony&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>Nexuz: Product Experience Agency</title>
 </head>
 
 
@@ -30,25 +26,28 @@
 
 
   <!-- SECTION 1 -->
-  <section id="section1"
+  <section id="landing"
     class=" h-auto w-screen bg-gradient-to-br from-black via-gray-900 to-gray-700 cursor-nexuz flex flex-col overflow-x-hidden scroll-m-20">
     <div class="header flex justify-between items-center">
-      <img class="w-14  m-2" src="logo.png" alt="Logo">
+      <img class="md:w-14 w-6  m-2" src="logo.png" alt="Logo">
       <nav class="flex-grow">
-        <ul class="text-white flex gap-x-12 flex-grow justify-end mr-10 self-center md:text-2xl ml-5">
-          <li><a href="#section2">ABOUT US</a></li>
-          <li><a href="#section3">SERVICES FORAY</a></li>
-          <li><a href='#section5'>TESTIMONY</a></li>
-          <li><a href='#section6'>HIRE US</a></li>
+        <ul
+          class="text-white flex gap-x-4 md:gap-x-12 flex-grow justify-end mr-10 self-center md:text-2xl text-sm ml-5">
+          <li><a href="#aboutus">ABOUT US</a></li>
+          <li><a href="#services">SERVICES FORAY</a></li>
+          <li><a href='#testimony'>TESTIMONY</a></li>
+          <li><a href='#contact'>HIRE US</a></li>
         </ul>
       </nav>
     </div>
     <div class="s1content flex max-h-auto w-screen mt-10">
       <div class="box1 1/2 text-center justify-items-center">
         <img class="w-95vw h-auto self-center" src="finalwordlogo.png">
-        <h2 class="text-white w-583px h-100px text-3xl">Where Business Meets Bite Sized Brilliance</h2>
+        <h2 class="text-white w-583px h-100px text-xl md:text-3xl">Where Business Meets Bite Sized Brilliance</h2>
       </div>
-      <img class="w-[45%] h-fit lg:mt-3" src="jhaale.png">
+      <img
+        class="w-[41%] h-fit lg:mt-3 animate-infinite animate-duration-[15000ms] animate-delay-4000 animate-ease-in-out animate-alternate animate-spin"
+        src="jhaale.png">
     </div>
     <br>
     <hr class="bg-slate-600 h-1 rounded-s-md">
@@ -56,18 +55,18 @@
 
 
   <!-- SECTION 2-->
-  <section id="section2"
-    class="min-h-screen w-screen bg-gradient-to-bl from-gray-700 via-gray-900 to-black p-4 cursor-nexuz overflow-x-hidden">
+  <section id="aboutus"
+    class="h-auto w-screen bg-gradient-to-bl from-gray-700 via-gray-900 to-black p-4 cursor-nexuz overflow-x-hidden">
     <br>
-    <br>
-    <div class="header justify-end mb-20">
-      <h2 class="text-cyan-500 text-right text-3xl md:text-5xl mr-10">ABOUT US</h2>
-      <h1 class="text-white text-right mt-5 text-xl md:text-2xl">we craft Premium Product Experiences into the fabric of
+    <div class="header justify-end mb-4 md:mb-10">
+      <h2 class="text-cyan-500 text-right md:text-5xl mr-10 text-2xl">ABOUT US</h2>
+      <h1 class="text-white text-right mt-1 md:mt-5 text-md md:text-2xl">we craft Premium Product Experiences into the
+        fabric of
         excellence</h1>
     </div>
-    <div class="container flex flex-grow justify-center items-center ml-10">
-      <div id="content" class="w-2/3 text-center">
-        <div id="home">
+    <div class="container flex flex-grow justify-center items-center ml-auto mr-auto">
+      <div id="content" class="w-2/3 h-full text-center">
+        <div id="home" class="h-full w-full">
           <h1 class="text-cyan-500 text-left text-2xl md:text-3xl h-14 w-55 mb-4">PRODUCT EXPERIENCE</h1>
           <h1 class="text-white text-left text-lg md:text-2xl w-900px">In a market choked with "good enough," your
             product needs to thrill: to whisper "wow" with every click. That's where we come in. We're the PX
@@ -115,24 +114,30 @@
         </div>
       </div>
       <div id="navbar"
-        class="rounded-lg flex flex-col justify-end self-end bg-white bg-opacity-30 divide-y divide-slate-800 h-full ml-auto">
-        <div id="mission" onclick="showContent('home')" class="hover:bg-slate-400 hover:drop-shadow-md"><img
-            src="mission.png" style="width:10vh" class="mb-3"></div>
-        <div id="digital-link" onclick="showContent('digital')" class="hover:bg-slate-400 hover:drop-shadow-md"><img
-            src="aboutusnav.png" style="width:10vh" class="mb-3"></div>
-        <div id="proexp-link" onclick="showContent('proexp')" class="hover:bg-slate-400 hover:drop-shadow-md"><img
-            src="penav.png" style="width:10vh" class="mb-3"></div>
-        <div id="commitment-link" onclick="showContent('commitment')" class="hover:bg-slate-400 hover:drop-shadow-md">
-          <img src="handshake.png" style="width:10vh" class="mb-3">
+        class="rounded-lg flex flex-col flex-grow-0 justify-end gap-4 self-end divide-y divide-slate-800 h-full ml-auto mr-auto lg:mr-0">
+        <div id="mission" onclick="showContent('home')"
+          class="hover:bg-slate-400 hover:drop-shadow-md hover:rounded-md hover:animate-jump bg-white bg-opacity-30 rounded-md">
+          <img src="mission.png" style="width:10vh" class="">
         </div>
-        <div id="connect-link" onclick="showContent('connect')" class="hover:bg-slate-400 hover:drop-shadow-md"><img
-            src="connectnav.png" style="width:10vh" class="mb-3"></div>
+        <div id="digital-link" onclick="showContent('digital')"
+          class="hover:bg-slate-400 hover:drop-shadow-md hover:animate-jump  bg-white bg-opacity-30 rounded-md"><img
+            src="aboutusnav.png" style="width:10vh" class=""></div>
+        <div id="proexp-link" onclick="showContent('proexp')"
+          class="hover:bg-slate-400 hover:drop-shadow-md hover:animate-jump bg-white bg-opacity-30 rounded-md"><img
+            src="penav.png" style="width:10vh" class=""></div>
+        <div id="commitment-link" onclick="showContent('commitment')"
+          class="hover:bg-slate-400 hover:drop-shadow-md hover:animate-jump bg-white bg-opacity-30 rounded-md">
+          <img src="handshake.png" style="width:10vh" class="">
+        </div>
+        <div id="connect-link" onclick="showContent('connect')"
+          class="hover:bg-slate-400 hover:drop-shadow-md hover:animate-jump bg-white bg-opacity-30 rounded-md"><img
+            src="connectnav.png" style="width:10vh" class=""></div>
       </div>
     </div>
     <div class="flex items-center justify-center">
-      <a href="#section6"
-        class="w-1/3 h-20 bg-cyan-800 rounded-md animate-pulse text-white border-cyan-300 border-spacing-5 border-4 mb-16 mt-10 flex items-center justify-center text-center">
-        CONTACT US
+      <a href="#contact"
+        class="w-1/4 h-20  rounded-md animate-pulse animate-infinite animate-duration-[3000ms] animate-delay-1000 animate-ease-in-out animate-normal text-white border-cyan-300 border-spacing-5 border-4 mb-16 mt-10 flex items-center justify-center text-center text-sm md:text-lg hover:animate-jump">
+        UNLEASH THE NEXUZ WITHIN
       </a>
     </div>
     <script>
@@ -147,31 +152,33 @@
         document.getElementById(sectionId).style.display = 'block';
       }
     </script>
-    <hr class="bg-slate-600 h-1 rounded-s-md">
   </section>
+  <hr class="bg-slate-600 h-1 rounded-s-md">
+
 
 
   <!-- SECTION 3-->
-  <section id="section3"
-    class="h-auto w-screen bg-gradient-to-br from-black via-gray-900 to-gray-700 p-4 overflow-x-hidden">
+  <section id="services"
+    class="h-auto md:h-screen w-screen bg-gradient-to-br from-black via-gray-900 to-gray-700 p-4 overflow-x-hidden">
     <br>
     <div class="header justify-end mb-20">
-      <h2 class="text-cyan-500 text-left text-3xl md:text-5xl ml-10">SERVICES FORAY</h2>
+      <h2 class="text-cyan-500 text-left md:text-5xl mr-10 text-2xl md:ml-10">SERVICES FORAY</h2>
     </div>
     <!-- Slide 1 -->
     <div id="slide1"
-      class="slide bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-4 md:m-8 lg:m-10 w-fit">
+      class="slide responsiveContainer bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit" style="height:68vh;">
       <button onclick="prevSlide('slide1', 'slide6')"><img src="leftarrow.png"></button>
-      <div>
+      <div class="md:mx-10 mx-4 mt-auto mb-auto">
         <h1
-          class="text-cyan-500 text-left text-2xl md:text-4xl lg:text-6xl h-fit w-fit mt-36 ml-10 lg:tracking-wider object-contain ">
+          class="text-cyan-500 text-left text-xl md:text-4xl lg:text-6xl h-fit w-fit lg:tracking-wider object-contain ">
           PRODUCT RESEARCH</h1>
-        <h1 class="text-white text-left text-4xl w-900px ml-10 mt-5 tracking-normal object-contain">As a premier agency
+        <h1 class="text-white text-left md:text-2xl text-lg w-900px mt-5 tracking-normal object-contain">As a
+          premier agency
           specializing in
           UX research, we uncover the nuances of user behavior to create tailored digital solutions. Dive into
           data-driven design with Nexuz, where strategic research meets seamless user experiences</h1>
       </div>
-      <img src="brain.png" class="mt-20 object-contain md:h-1/3 h-1/5">
+      <img src="brain.png" class="w-33vw object-contain">
       <button onclick="nextSlide('slide1', 'slide2')"><img src='rightarrow.png'></button>
     </div>
 
@@ -180,15 +187,15 @@
 
     <!-- Slide 2 -->
     <div id="slide2"
-      class="slide bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit">
+      class="slide responsiveContainer bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit" style="height:68vh;">
       <button onclick="prevSlide('slide2', 'slide1')"><img src="leftarrow.png"></button>
-      <div>
-        <h1 class="text-cyan-500 text-left text-6xl h-14 w-55 mt-36 ml-10 tracking-wider">COMPETITIVE AUDIT</h1>
-        <h1 class="text-white text-left text-4xl w-900px ml-10 mt-5 tracking-normal">Competitive UX analysis benchmarks
+      <div class="md:mx-10 mx-4 mt-auto mb-auto">
+        <h1 class="text-cyan-500 text-left text-xl md:text-4xl lg:text-6xl h-fit w-fit lg:tracking-wider object-contain ">COMPETITIVE AUDIT</h1>
+        <h1 class="text-white text-left md:text-2xl text-lg w-900px mt-5 tracking-normal object-contain">Competitive UX analysis benchmarks
           a product against rivals, providing insights to enhance design and usability. It's a strategic tool for
           improving user satisfaction and maintaining a competitive edge.</h1>
       </div>
-      <img src="audit.png" style="height:585px" class="mt-20">
+      <img src="audit.png" class="w-33vw object-contain">
       <button onclick="nextSlide('slide2', 'slide3')"><img src='rightarrow.png'></button>
     </div>
 
@@ -197,15 +204,15 @@
 
     <!-- Slide 3 -->
     <div id="slide3"
-      class="slide bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit">
+      class="slide responsiveContainer bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit" style="height:68vh;">
       <button onclick="prevSlide('slide3', 'slide2')"><img src="leftarrow.png"></button>
-      <div>
-        <h1 class="text-cyan-500 text-left text-6xl h-14 w-55 mt-36 ml-10 tracking-wider">UX DESIGN</h1>
-        <h1 class="text-white text-left text-4xl w-900px ml-10 mt-5 tracking-normal">We specialize in cutting-edge UX
+      <div class="md:mx-10 mx-4 mt-auto mb-auto">
+        <h1 class="text-cyan-500 text-left text-xl md:text-4xl lg:text-6xl h-fit w-fit lg:tracking-wider object-contain ">UX DESIGN</h1>
+        <h1 class="text-white text-left md:text-2xl text-lg w-900px mt-5 tracking-normal object-contain">We specialize in cutting-edge UX
           design, transforming digital interactions into memorable journeys. From intuitive interfaces to visually
           stunning experiences, Nexuz is your partner in crafting applications that captivate and engage. </h1>
       </div>
-      <img src="uiux.png" style="height: 700px;" class="mt-auto">
+      <img src="uiux.png"  class="w-33vw object-contain">
       <button onclick="nextSlide('slide3', 'slide4')"><img src='rightarrow.png'></button>
     </div>
 
@@ -214,16 +221,16 @@
 
     <!-- Slide 4 -->
     <div id="slide4"
-      class="slide bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit">
+      class="slide responsiveContainer bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit" style="height:68vh;">
       <button onclick="prevSlide('slide4', 'slide3')"><img src="leftarrow.png"></button>
-      <div>
-        <h1 class="text-cyan-500 text-left text-4xl h-14 w-55 mt-36 ml-10 tracking-wide">PRODUCT TESTING | OPTIMIZATION
+      <div class="md:mx-10 mx-4 mt-auto mb-auto">
+        <h1 class="text-cyan-500 text-left text-xl md:text-4xl lg:text-6xl h-fit w-fit lg:tracking-wider object-contain">PRODUCT TESTING | OPTIMIZATION
         </h1>
-        <h1 class="text-white text-left text-4xl w-900px ml-10 mt-5 tracking-normal">We refine your digital presence
+        <h1 class="text-white text-left md:text-2xl text-lg w-900px mt-5 tracking-normal object-contain">We refine your digital presence
           through meticulous analysis and enhancements. Elevate your user satisfaction and achieve peak performance with
           Nexuz.– where every click is an opportunity for improvement."</h1>
       </div>
-      <img src="opti.png" style="height: 550px;" class="mt-20">
+      <img src="producttesting.png" class="w-33vw object-contain">
       <button onclick="nextSlide('slide4', 'slide5')"><img src='rightarrow.png'></button>
     </div>
 
@@ -232,35 +239,34 @@
 
     <!-- Slide 5 -->
     <div id="slide5"
-      class="slide bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit">
+      class="slide responsiveContainer bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit" style="height:68vh;">
 
       <button onclick="prevSlide('slide5', 'slide4')"><img src="leftarrow.png"></button>
-      <div>
-        <h1 class="text-cyan-500 text-left text-6xl h-14 w-55 mt-36 ml-10 tracking-wider">WEB DEVELOPMENT</h1>
-        <h1 class="text-white text-left text-4xl w-900px ml-10 mt-5 tracking-normal">We bring your vision to life with
+      <div class="md:mx-10 mx-4 mt-auto mb-auto">
+        <h1 class="text-cyan-500 text-left text-xl md:text-4xl lg:text-6xl h-fit w-fit lg:tracking-wider object-contain">WEB DEVELOPMENT</h1>
+        <h1 class="text-white text-left md:text-2xl text-lg w-900px mt-5 tracking-normal object-contain">We bring your vision to life with
           seamless code and striking design. Elevate your online presence with Nexuz – where innovation meets
           functionality, and every application is a masterpiece in the digital landscape."</h1>
       </div>
-      <img src="web.png" style="height:585px" class="mt-20">
+      <img src="laptop.png" class="w-33vw object-contain">
       <button onclick="nextSlide('slide5', 'slide6')"><img src='rightarrow.png'></button>
     </div>
 
 
     <!-- SLIDE 6 -->
     <div id="slide6"
-      class="slide bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit">
+      class="slide responsiveContainer bg-gray-800 rounded-md relative justify-center flex border-white border-spacing-32 border-4 m-10 w-fit" style="height:68vh;">
 
       <button onclick="prevSlide('slide6', 'slide5')"><img src="leftarrow.png"></button>
-      <div>
-        <h1 class="text-cyan-500 text-left text-6xl h-14 w-55 mt-36 ml-10 tracking-wider">BRANDING SERVICES</h1>
-        <h1 class="text-white text-left text-4xl w-900px ml-10 mt-5 tracking-normal">We bring your vision to life with
+      <div class="md:mx-10 mx-4 mt-auto mb-auto">
+        <h1 class="text-cyan-500 text-left text-xl md:text-4xl lg:text-6xl h-fit w-fit lg:tracking-wider object-contain">BRANDING SERVICES</h1>
+        <h1 class="text-white text-left md:text-2xl text-lg w-900px mt-5 tracking-normal object-contain">We bring your vision to life with
           seamless code and striking design. Elevate your online presence with Nexuz –
           where innovation meets functionality, and every application is a masterpiece in the digital landscape.</h1>
       </div>
-      <img src="branding.png" style="height:585px" class="mt-20">
+      <img src="brandingf.png" class="w-33vw object-contain">
       <button onclick="nextSlide('slide6', 'slide1')"><img src='rightarrow.png'></button>
     </div>
-
 
     <script>
       function showSlide(slideId) {
@@ -298,81 +304,147 @@
   </section>
   <!--SECTION 4-->
   <hr class="bg-slate-600 h-1 rounded-s-md">
-  <section id="section4"
+  <section id="process"
     class="h-auto w-screen bg-gradient-to-bl from-gray-700 via-gray-900 to-black p-4 overflow-clip">
     <br>
-    <h2 class="text-cyan-500 text-right text-3xl md:text-5xl header mr-10">OUR PROCESS</h2>
-    <div class="flex mt-10 ml-20 mb-10">
-      <video class="justify-center mt-12 sticky top-4" style="height:40vw; width:40vw;" autoplay muted loop>
+    <h2 class="text-cyan-500 text-right text-2xl md:text-5xl header mr-auto">OUR PROCESS</h2>
+    <div class="flex mt-10 ml-auto mr-auto mb-auto">
+      <video class="justify-center mt-12 sticky top-4 ml-auto mr-4 mb-5" style="height:40vw; width:40vw;" autoplay muted
+        loop poster="mistyphoto.png">
         <source src="mistyvid.MP4">
       </video>
-      <div class="mt-10 m-auto md:ml-16 lg:ml-24 justify-end mr-10">
-        <div class="hover">
-          <h1 class="text-cyan-500 text-xl md:text-2xl ml-24 md:tracking-wider tracking-wide mr-4"> STEP-1 Sync-In</h1>
-          <ul class="text-white text-xl list-image-[url(/images/list.png)] ml-32 text-left">
-            <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl mr-4">Project Brief</li>
-            <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl mr-4">Competitive Analysis</li>
-            <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">Discussion with Stakeholders
-            </li>
-          </ul>
-        </div>
-        <br>
-        <h1 class="text-cyan-500 text-xl md:text-2xl ml-24 md:tracking-wider tracking-wide"> STEP-2 Ideate</h1>
-        <ul class="text-white text-xl list-image-[url(/images/list.png)] ml-32 text-left">
-          <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">User-Persona</li>
-          <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">Empathy Mapping</li>
-          <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">Information Architecture</li>
+      <div id="stepContainer" class="mt-10 ml-auto justify-end mr-auto">
+        <h1 class="text-cyan-500 text-xl md:text-2xl ml-auto md:tracking-wider tracking-wide mr-auto">
+          STEP-1 Sync-In</h1>
+        <ul class="text-white ml-auto text-left flex flex-col items-left">
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Project Brief
+          </li>
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Competitive Analysis
+          </li>
+          <li class="md:tracking-widest tracking-wide text-md md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Discussion with Stakeholders
+          </li>
         </ul>
         <br>
-        <h1 class="text-cyan-500 text-xl md:text-2xl ml-24 md:tracking-wider tracking-wide"> STEP-3 Build</h1>
-        <ul class="text-white text-xl list-image-[url(/images/list.png)] ml-32 text-left">
-          <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">User-Flows</li>
-          <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">Brand Identity</li>
-          <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">Hi-Fidelity Mockups</li>
-          <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">Prototyping</li>
-          <br>
+        <h1 class="text-cyan-500 text-xl md:text-2xl md:tracking-wider tracking-wide mr-auto ml-auto">
+          STEP-2 Ideate</h1>
+        <ul class="text-white text-xl ml-auto text-left flex flex-col items-left">
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            User-Persona
+          </li>
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Empathy Mapping
+          </li>
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Information Architecture
+          </li>
         </ul>
-          <h1 class="text-cyan-500 text-xl md:text-2xl ml-24 md:tracking-wider tracking-wide"> STEP-4 Deliver</h1>
-          <ul class="text-white text-xl list-image-[url(/images/list.png)] ml-32 text-left">
-            <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">Stakeholder Review</li>
-            <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">User Review</li>
-            <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">Final A-B Testing</li>
-            <li class="md:tracking-widest tracking-wide text-xl md:text-2xl lg:text-3xl">Prototype Handover</li>
-          </ul>
-          <br>
+        <br>
+        <h1 class="text-cyan-500 text-xl md:text-2xl md:tracking-wider tracking-wide mr-auto ml-auto">
+          STEP-3 Build</h1>
+        <ul class="text-white text-xl ml-auto text-left flex flex-col items-left">
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            User-Flows
+          </li>
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Brand Identity
+          </li>
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Hi-Fidelity Mockups
+          </li>
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Prototyping
+          </li>
+        </ul>
+        <br>
+        <h1 class="text-cyan-500 text-xl md:text-2xl md:tracking-wider tracking-wide mr-auto ml-auto">
+          STEP-4 Deliver</h1>
+        <ul class="text-white text-xl ml-auto text-left flex flex-col items-left">
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Stakeholder Review
+          </li>
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            User Review
+          </li>
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Final A-B Testing
+          </li>
+          <li class="md:tracking-widest tracking-wide text-lg md:text-xl lg:text-2xl mb-4 flex">
+            <img src="list.png" alt="Bullet Point" class="mr-2 inline-block align-middle object-contain">
+            Prototype Handover
+          </li>
+        </ul>
+        <br>
       </div>
     </div>
-    <hr class="bg-slate-600 h-1 rounded-s-md">
   </section>
+  <hr class="bg-slate-600 h-1 rounded-s-md">
 
 
 
 
   <!--SECTION 5 HERE-->
-  <section id="section5"
+  <section id="testimony"
     class="h-auto w-screen bg-gradient-to-br from-black via-gray-900 to-gray-700 p-4 overflow-x-clip">
     <br>
     <div class="header justify-end mb-20">
-      <h2 class="text-cyan-500 text-left text-3xl md:text-5xl ml-10">TESTIMONY</h2>
-      <h1 class="text-white text-left mt-5 text-xl md:text-2xl ml-10">Our Nexuz Nodes</h1>
+      <h2 class="text-cyan-500 text-left text-2xl md:text-5xl ml-10">TESTIMONY</h2>
+      <h1 class="text-white text-left mt-5 text-md md:text-2xl ml-10">Our Nexuz Nodes</h1>
     </div>
-    <div class="optifinish bg-gray-800 bg-opacity-50 rounded-lg m-10 h-3/4">
+    <div class="optifinish bg-gray-800 bg-opacity-50 rounded-lg m-10 h-3/4 pb-4">
       <br>
       <h2 class="text-cyan-500 text-right text-4xl tracking-widest m-4">OptiFinish</h2>
       <div class=" flex">
-        <video autoplay muted loop class="m-auto ml-3 w-1/2 sticky top-4 justify-center">
+        <video autoplay muted loop class="m-auto ml-3 w-1/2 sticky top-4 justify-center" poster="optifinish2.jpg">
           <source src="boxesvideo.mp4">
         </video>
-        <h1 class="text-white md:text-2xl text-md tracking-wider md:mt-24 mt-10 lg:mt-32 m-10 text-right mb-4">
+        <h1 class="text-white md:text-2xl text-sm tracking-wider m-auto text-left ml-3">
           Introducing OptiFinish, the epitome of excellence in
-          powder coating, presented in our exclusive box prototype crafted by Nexuz. Proudly associated with <span
-            class="text-cyan-500">Value Added Coating Solutions Pvt. Ltd.</span>, a thriving company with a remarkable
+          powder coating, presented in our exclusive box prototype crafted by Nexuz. Proudly associated with Value Added
+          Coating Solutions Pvt. Ltd., a thriving company with a remarkable
           $7 million in revenue. Elevate your brand with the perfect synergy of design and success.</h1>
       </div>
-
-
-
-
+    </div>
+    <div class="infusion bg-gray-800 bg-opacity-50 rounded-lg m-10 h-3/4 pb-4">
+      <br>
+      <h2 class="text-cyan-500 text-left text-4xl tracking-widest m-4">Infusion</h2>
+      <div class=" flex">
+        <h1 class="text-white md:text-xl text-sm tracking-wider m-auto text-center mr-3 ml-3">
+          Unveiling the Infusion Logo: A fusion of 'I' and 'F' forming stair-like lines, symbolizing your brand's upward
+          trajectory. The 'F' embodies unity, seamlessly becoming the 'I.' Crowned with a white dot, it signifies
+          pinnacle achievement. This emblem captures Infusion's ethos—progress, unity, and aspiring to new heights.
+          Welcome to a brand experience where every detail elevates.
+        </h1>
+        <img src="infusion1.png" class="m-auto mr-3 w-1/3 sticky top-4 justify-center">
+      </div>
+      <div class=" flex">
+        <img src="infusion2.png" class="m-auto ml-3 mr-3 w-1/3 sticky top-4 justify-center">
+        <h1 class="text-white md:text-xl text-sm tracking-wider m-auto text-center mr-3">
+          The choice of typography for the Infusion logo, the Acquire font,
+          embodies a seamless fusion with the brand's space-themed identity.
+          Acquire's sleek and futuristic design perfectly aligns with the logo's
+          color palette and overall aesthetics, imbuing it with a modern, sci-fi
+          aura. The font's sharp, clean lines and dynamic elements harmonize
+          effortlessly with the space-themed imagery of the logo, elevating its
+          visual impact and lending an unmistakable space-inspired essence to
+          the brand's identity.
+        </h1>
+      </div>
     </div>
 
 
@@ -389,16 +461,16 @@
 
 
   <!-- SECTION 6 HERE-->
-  <section id="section6"
+  <section id="contact"
     class="h-auto w-screen bg-gradient-to-bl from-gray-700 via-gray-900 to-black p-4 overflow-x-hidden">
     <br>
     <div class="header justify-end mb-20">
-      <h2 class="text-cyan-500 text-right text-3xl md:text-5xl mr-10">CONNECT WITH US</h2>
-      <h1 class="text-white text-right mt-5 text-xl md:text-2xl">Unlock The Potential Of Your Digital Experience With
+      <h2 class="text-cyan-500 text-right text-2xl md:text-5xl mr-10">CONNECT WITH US</h2>
+      <h1 class="text-white text-right mt-5 text-md md:text-2xl">Unlock The Potential Of Your Digital Experience With
         Nexuz </h1>
     </div>
-    <div class="flex">
-      <div class="relative md:ml-16 lg:ml-28 m-4 rounded-lg shadow-lg border-4" style="height:90vh">
+    <div  class="responsiveContainer flex flex-col md:flex-row">
+      <div class="relative m-auto rounded-lg shadow-lg border-4 md:w-1/2" style="height:80vh">
         <!-- Video Background -->
         <video class="object-cover w-full h-full" autoplay loop muted>
           <source src="formbg.mp4" type="video/mp4">
@@ -406,14 +478,15 @@
         </video>
 
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-md ">
-          <div class="bg-white opacity-80 shadow-lg flex mb-20">
-            <img class="h-fit" src="lock.png">
+          <div class="bg-white opacity-80 shadow-lg flex mb-20 rounded-md">
+            <img class="h-fit" src="lock.gif">
             <p class="text-gray-700 text-sm text-center">We take privacy issues seriously. You can be sure that your
               personal data is securely protected.</p>
           </div>
-          <form class="bg-white opacity-80 p-8 shadow-lg" name="submit-to-google-sheet">
+
+          <form class="bg-white opacity-80 p-8 shadow-lg rounded-md" name="submit-to-google-sheet">
             <div class="mb-4">
-              <label for="name" class="block text-sm font-medium text-gray-700 ">Name*</label>
+              <label for="name" class="block text-sm font-medium text-gray-700">Name*</label>
               <input type="text" id="name" name="Name" class="mt-1 p-2 w-full border rounded-md">
             </div>
 
@@ -423,12 +496,12 @@
             </div>
 
             <div class="mb-4">
-              <label for="email" class="block text-sm  text-gray-700">Email*</label>
+              <label for="email" class="block text-sm text-gray-700">Email*</label>
               <input type="email" id="email" name="Email" class="mt-1 p-2 w-full border rounded-md">
             </div>
 
             <div class="mb-4">
-              <label for="phone" class="block text-sm  text-gray-700">Phone Number*</label>
+              <label for="phone" class="block text-sm text-gray-700">Phone Number*</label>
               <input type="tel" id="phone" name="Phone Number" class="mt-1 p-2 w-full border rounded-md">
             </div>
 
@@ -436,45 +509,41 @@
           </form>
         </div>
       </div>
-        <img class="ml-12 w-2/5 h-fit justify-end md:translate-x-1/3" src="laptopguy.png">
-      </div>
-      </div>
 
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycby6Jh7FbQKpzwV81D_AvxUXCTl5eL-6OtNF3xxyRzd-IkvDQYnN3h_Fi8uzU-0zfJ2JDQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const success = document.getElementById('success');
-
+      <img class="ml-10 w-2/5 h-fit hidden md:block" src="laptopguy.png">
+    </div>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby6Jh7FbQKpzwV81D_AvxUXCTl5eL-6OtNF3xxyRzd-IkvDQYnN3h_Fi8uzU-0zfJ2JDQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const success = document.getElementById('success');
 
 
 
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-              form.reset();
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-   
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <br>
     <footer class="bg-gray-800 text-white p-6">
       <div class="container mx-auto flex justify-between items-center">
         <div class="flex items-center space-x-4">
           <img src="logo.png" alt="Your Logo" class="h-10 w-10 mr-2">
-          <span class="text-lg font-semibold">Nexuz</span>
+        </div>
+        <div class="flex items-center space-x-2 md:space-x-4 text-xs md:text-lg">
+          <a href="#landing" class="hover:text-cyan-500">Home</a>
+          <a href="#aboutus" class="hover:text-cyan-500">About Us</a>
+          <a href="#services" class="hover:text-cyan-500">Services</a>
+          <a href="#process" class="hover:text-cyan-500">Our Process</a>
+          <a href="#testimony" class="hover:text-cyan-500">Testimonials</a>
         </div>
         <div class="flex items-center space-x-4">
-          <a href="#section1" class="hover:text-cyan-500">Home</a>
-          <a href="#section2" class="hover:text-cyan-500">About Us</a>
-          <a href="#section3" class="hover:text-cyan-500">Services</a>
-          <a href="#section4" class="hover:text-cyan-500">Our Process</a>
-          <a href="#section5" class="hover:text-cyan-500">Testimonials</a>
-        </div>
-        <div class="flex items-center space-x-4">
-          <a href="#section6" class="hover:text-cyan-500">Contact Us</a>
-          <a href="/privacy-policy" class="hover:text-cyan-500">Privacy Policy</a>
-          <a href="/terms-of-service" class="hover:text-cyan-500">Terms of Service</a>
+          <a href="#contact" class="hover:text-cyan-500 text-xs md:text-lg">Contact Us</a>
           <a href="https://www.linkedin.com/company/nexuzdev/" target="_blank" rel="noopener noreferrer"
             class="hover:text-cyan-500">
             <img src="linkedin.jpeg" alt="LinkedIn Icon" class="h-5 w-5">
@@ -489,11 +558,13 @@
         <p class="text-gray-400 text-sm">© 2024 Nexuz. All rights reserved. | Designed by Nexuz</p>
       </div>
     </footer>
-   
+
+
+
+
+
+
   </section>
 </body>
-
-
-
 
 </html>
