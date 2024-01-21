@@ -10,3 +10,16 @@ body{
 .header{
     font-family: 'Syncopate', sans-serif;
 }
+@keyframes custom-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+.custom-animation {
+    animation: custom-spin infinite 15s ease-in-out alternate;
+    animation-delay: 4s;
+}
